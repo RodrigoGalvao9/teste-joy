@@ -34,7 +34,7 @@
         </div>
     </header>
     <main>
-        <button class="main-button">Mapa de Alertas</button>
+        <span id="span-principal">Mapa de Alertas</span>
         <section id="mapa">
             <div id="map">
                 <script>
@@ -68,85 +68,49 @@
                 </script>
             </div>
         </section>
-        <section class="cards-main">
-            <button class="section-button" onclick="toggleTable('enchente')">Enchente</button>
-            <table class="alerta-table" id="enchente">
-                <thead>
-                    <tr>
-                        <th>Gravidade</th>
-                        <th>Cidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="critico">Crítico</td>
-                        <td>Montenegro</td>
-                    </tr>
-                    <tr>
-                        <td class="moderado">Moderado</td>
-                        <td>Santa Cruz do Sul</td>
-                    </tr>
-                    <tr>
-                        <td class="baixo">Baixo</td>
-                        <td>Bento Gonçalves</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="moderado">Moderado</td>
-                        <td>Cidade Adicional 1</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="baixo">Baixo</td>
-                        <td>Cidade Adicional 2</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="critico">Crítico</td>
-                        <td>Cidade Adicional 3</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">...</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="cards">
+            <span class="pedaco">Enchente</span>
+            <div class="alerta">
+                <div class="element-principal">
+                    <h3>Gravidade</h3>
+                    <h3>Cidade</h3>
+                </div>
+                <div class="element-secundario">
+                    <div class="gravidades">
+                        <p class="gravidade-alta">Alta</p>
+                        <p class="gravidade-baixa">Baixa</p>
+                        <p class="gravidade-media">Média</p>
+                    </div>
+                    <div class="cidades">
+                        <p>Taquari</p>
+                        <p>Lajeado</p>
+                        <p>Butía</p>
+                    </div>
+                </div>
+            </div>
+            <button class="expandir-btn">...</button>
         </section>
-        <section class="cards-main">
-            <button class="section-button" onclick="toggleTable('deslizamento')">Deslizamento</button>
-            <table class="alerta-table" id="deslizamento">
-                <thead>
-                    <tr>
-                        <th>Gravidade</th>
-                        <th>Cidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="critico">Crítico</td>
-                        <td>Agudo</td>
-                    </tr>
-                    <tr>
-                        <td class="moderado">Moderado</td>
-                        <td>Rio Pardo</td>
-                    </tr>
-                    <tr>
-                        <td class="baixo">Baixo</td>
-                        <td>São Sepé</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="moderado">Moderado</td>
-                        <td>Cidade Adicional 1</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="baixo">Baixo</td>
-                        <td>Cidade Adicional 2</td>
-                    </tr>
-                    <tr class="extra-row">
-                        <td class="critico">Crítico</td>
-                        <td>Cidade Adicional 3</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">...</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="cards">
+            <span class="pedaco">Deslizamento</span>
+            <div class="alerta">
+                <div class="element-principal">
+                    <h3>Gravidade</h3>
+                    <h3>Cidade</h3>
+                </div>
+                <div class="element-secundario">
+                    <div class="gravidades">
+                        <p class="gravidade-alta">Alta</p>
+                        <p class="gravidade-baixa">Baixa</p>
+                        <p class="gravidade-media">Média</p>
+                    </div>
+                    <div class="cidades">
+                        <p>Teutônia</p>
+                        <p>Pantano Grande</p>
+                        <p>Rio Pardo</p>
+                    </div>
+                </div>
+                <button class="expandir-btn">...</button>
+            </div>
         </section>
     </main>
     <footer>
