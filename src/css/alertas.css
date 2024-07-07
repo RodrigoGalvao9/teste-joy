@@ -105,11 +105,10 @@ main {
     height: 400px;
 }
 
-.cards {
+#cards {
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 800px;
     padding: 10px;
 }
 
@@ -169,11 +168,6 @@ span {
     border-top: 1px solid #000;
 }
 
-.gravidades {
-    padding: 5px;
-    margin: 5px;
-}
-
 .gravidade-alta {
     background-color: rgb(223, 43, 43);
     color: white;
@@ -198,10 +192,6 @@ span {
     text-align: center;
 }
 
-.cidades {
-    padding: 5px;
-    margin: 5px;
-}
 
 /* rodapé = footer */
 
